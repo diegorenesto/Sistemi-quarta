@@ -1,4 +1,4 @@
-class Pacchetto {
+public class Pacchetto {
 
     String mittente;
     String destinatario;
