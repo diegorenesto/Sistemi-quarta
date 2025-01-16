@@ -45,10 +45,10 @@ Creare e gestire una rete composta da dispositivi interconnessi, in grado di sca
 3. **Modularità:** La struttura ad oggetti deve favorire l'aggiunta di nuove funzionalità senza modificare quelle esistenti.
 
 
-##Analisi Tecnica
+## Analisi Tecnica
 #### Classi Principali:
 
-1. **Dispositivo:**
+1. **DispositivoAttivo:**
     
     - Attributi: `id`, `indirizzoIP`, `connessioni`
     - Metodi: `connetti()`, `trasmettiDati()`, `riceviDati()`
