@@ -1,0 +1,224 @@
+!- RT-RM
+enable 
+configure terminal
+hostname
+end
+exit
+!- Fa 4/0 RT-NA 11.0.0.8/30 IP: 11.0.0.9 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.9 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 5/0 RT-TO 11.0.0.4/30 IP: 11.0.0.5 255.255.255.252
+enable 
+configure terminal
+interface 
+ip address 11.0.0.5 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 6/0 RT-MI 11.0.0.0/30 IP: 11.0.0.1 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.1 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 7/0 Anzio 10.12.192.0/18 GW: 10.12.255.254 SM 255.255.192.0
+enable 
+configure terminal
+interface
+ip address 10.12.255.254 SM 255.255.192.0
+no shutdown
+end
+exit
+!- Fa 8/0 Fiumicino 10.12.128.0/18 GW: 10.12.191.254 SM 255.255.192.0 
+enable 
+configure terminal
+interface
+ip address 10.12.191.254 SM 255.255.192.0 
+no shutdown
+end
+exit
+!- Fa 9/0 Guidonia-Montecelio 10.12.0.0/17 GW: 10.12.127.254 SM 255.255.128.0 
+enable 
+configure terminal
+interface
+ip address 10.12.127.254 SM 255.255.128.0 
+no shutdown
+end
+exit
+
+!- RT-MI 
+enable 
+configure terminal
+hostname
+end
+exit
+!- Fa 4/0 RT-RM 11.0.0.0/30 IP: 11.0.0.1 255.255.255.252
+enable 
+configure terminal
+interface 
+ip address 11.0.0.1 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 5/0 RT-NA 11.0.0.16/30 IP: 11.0.0.17 255.255.255.252
+no shutdown
+enable 
+configure terminal
+interface
+ip address 11.0.0.17 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 6/0 RT-TO 11.0.0.12/30 IP: 11.0.0.13 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.13 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 7/0 Legnano 10.20.0.0/18 GW: 10.20.63.254 SM 255.255.192.0
+enable 
+configure terminal
+interface
+ip address 10.20.63.254 SM 255.255.192.0
+no shutdown
+end
+exit
+!- Fa 8/0 Rozzano 10.20.64.0/18 GW: 10.20.127.254 SM 255.255.192.0
+enable 
+configure terminal
+interface
+ip address 10.20.127.254 SM 255.255.192.0
+no shutdown
+end
+exit
+- Fa 9/0 Cinisello-Balsamo 10.20.128.0/19 GW: 10.20.159.254 SM 255.255.224.0
+enable 
+configure terminal
+interface
+ip address 10.20.159.254 SM 255.255.224.0
+no shutdown
+end
+exit
+
+
+
+!- RT-NA
+enable 
+configure terminal
+hostname
+end
+exit
+!- Fa 4/0 RT-RM 11.0.0.8/30 IP: 11.0.0.10 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.10 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 5/0 RT-MI 11.0.0.16/30 IP: 11.0.0.18 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.18 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 6/0 RT-TO 11.0.0.20/30 IP: 11.0.0.21 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.21 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 7/0 Pozzuoli 10.14.192.0/18 GW: 10.14.255.254 SM 255.255.192.0
+enable 
+configure terminal
+interface 
+ip address 10.14.255.254 SM 255.255.192.0
+no shutdown
+end
+exit
+!- Fa 8/0 Torre-del-Greco 10.14.0.0/17 GW: 10.14.127.254 SM 255.255.128.0
+enable 
+configure terminal
+interface
+ip address 10.14.127.254 SM 255.255.128.0
+no shutdown
+end
+exit
+!- Fa 9/0 Giuliano-in-Campania 10.14.128.0/18 GW: 10.14.191.254 SM 255.255.192.0
+enable 
+configure terminal
+interface 
+ip address 10.14.191.254 SM 255.255.192.0
+no shutdown
+end
+exit
+
+
+
+!- RT-TO
+enable 
+configure terminal
+hostname
+end
+exit
+!- Fa 4/0 RT-RM 11.0.0.4/30 IP: 11.0.0.6 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.6 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 5/0 RT-NA 11.0.0.20/30 IP: 11.0.0.22 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.22 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 6/0 RT-MI 11.0.0.12/30 IP: 11.0.0.14 255.255.255.252
+enable 
+configure terminal
+interface
+ip address 11.0.0.14 255.255.255.252
+no shutdown
+end
+exit
+!- Fa 7/0 Rivoli 10.1.0.0/18 GW: 10.1.63.254.0 SM 255.255.192.0
+enable 
+configure terminal
+interface 
+ip address 10.1.63.254.0 SM 255.255.192.0
+no shutdown
+end
+exit
+!- Fa 8/0 Chieri 10.0.0.0/17 GW: 10.0.127.254 SM 255.255.128.0
+enable 
+configure terminal
+interface
+ip address 10.0.127.254 SM 255.255.128.0
+no shutdown
+end
+exit
+!- Fa 9/0 Moncalieri 10.0.128.0/17 GW: 10.0.255.254 SM 255.255.128.0
+enable 
+configure terminal
+interface
+ip address 10.0.255.254 SM 255.255.128.0
+no shutdown
+end
+exit

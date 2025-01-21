@@ -1,0 +1,16 @@
+se la rotta non è configurata, il dispositivo sa che esiste la rete interna, ma non può accedervi
+==> il ping non funzionerebbe
+
+Domini di rete = 18 (3*4 (dispositivi*zone) + collegamenti tra router)
+
+
+rotte statiche = indicazioni per andare all'interno di altre reti
+
+in alternativa, si potrebbe dire ad ogni singolo router di condividere a tutti i router 
+connessi tutte le destinazioni che possono essere raggiunte
+==> i router si auto-istruiscono tra loro comunicando
+
+comunicare comporta un'auto-aggiornamento tra di loro
+questo comporta accordi (sul far passare o no)
+
+questi meccanismi sono ROTTE DINAMICHE
