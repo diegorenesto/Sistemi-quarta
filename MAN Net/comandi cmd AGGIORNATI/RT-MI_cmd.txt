@@ -1,0 +1,109 @@
+!- Router RT-MI	
+enable
+configure terminal
+hostname RT-MI
+end
+exit
+!- FastEthernet 9/0 RT-PA Net-ID <<11.0.0.48/30>> ip address <<11.0.0.49>> <<255.255.255.252>> 
+enable 
+configure terminal
+interface FastEthernet 9/0
+ip address 11.0.0.49 255.255.255.252
+no shutdown
+end
+exit
+!- FastEthernet 8/0 RT-GE Net-ID <<11.0.0.44/30>> ip address <<11.0.0.45>> <<255.255.255.252>> 
+enable 
+configure terminal
+interface FastEthernet 8/0
+ip address 11.0.0.45 255.255.255.252
+no shutdown
+end
+exit
+!- FastEthernet 7/0 RT-INT-MI Net-ID <<11.0.0.4/30>> ip address <<11.0.0.6>> <<255.255.255.252>>
+enable 
+configure terminal
+interface FastEthernet 7/0
+ip address 11.0.0.6 255.255.255.252 
+no shutdown
+end
+exit
+
+!- Router RT-INT-MI
+enable
+configure terminal
+hostname RT-INT-MI
+end
+exit
+!- FastEthernet 0/0 Sesto San Giovanni Net-ID <<10.3.64.0/19>> ip address <<10.3.95.254>> <<255.255.224.0>>
+enable 
+configure terminal
+interface FastEthernet 0/0 
+ip address 10.3.95.254 255.255.224.0
+no shutdown
+end
+exit
+!- FastEthernet 1/0 Cinisello Balsamo Net-ID <<10.2.0.0/18>> ip address <<10.2.63.254>> <<255.255.192.0>>
+enable 
+configure terminal
+interface FastEthernet 1/0 
+ip address 10.2.63.254 255.255.192.0 
+no shutdown
+end
+exit
+!- FastEthernet 2/0 Legnano Net-ID <<10.2.64.0/18>> ip address <<10.2.127.254>> <<255.255.192.0>>
+enable 
+configure terminal
+interface FastEthernet 2/0
+ip address 10.2.127.254 255.255.192.0 
+no shutdown
+end
+exit
+!- FastEthernet 3/0 Rho Net-ID <<10.2.128.0/18>> ip address <<10.2.191.254>> <<255.255.192.0>>
+enable 
+configure terminal
+interface FastEthernet 3/0
+ip address 10.2.191.254 255.255.192.0 
+no shutdown
+end
+exit
+!- FastEthernet 4/0 Cologno Monzese Net-ID <<10.3.96.0/19>> ip address <<10.3.127.254>> <<255.255.224.0>>
+enable 
+configure terminal
+interface FastEthernet 4/0
+ip address 10.3.127.254 255.255.224.0 
+no shutdown
+end
+exit
+!- FastEthernet 5/0 Paderno Dugnano Net-ID <<10.2.192.0/18>> ip address <<10.2.255.254>> <<255.255.192.0>>
+enable 
+configure terminal
+interface FastEthernet 5/0 
+ip address 10.2.255.254 255.255.192.0 
+no shutdown
+end
+exit
+!- FastEthernet 6/0 Rozzano Net-ID <<10.3.128.0/20>> ip address <<10.3.143.254>> <<255.255.240.0>>
+enable 
+configure terminal
+interface FastEthernet 6/0
+ip address 10.3.143.254 255.255.240.0
+no shutdown
+end
+exit
+!- FastEthernet 7/0 RT-MI Net-ID <<11.0.0.4/30>> ip address <<11.0.0.5>> <<255.255.255.252>>
+enable 
+configure terminal
+interface FastEthernet 7/0
+ip address 11.0.0.5 255.255.255.252
+no shutdown
+end
+exit
+!- FastEthernet 8/0 San Giuliano Milanese Net-ID <<10.3.0.0/18>> ip address <<10.3.63.254>> <<255.255.192.0>>
+enable 
+configure terminal
+interface FastEthernet 8/0
+ip address 10.3.63.254 255.255.192.0 
+no shutdown
+end
+exit

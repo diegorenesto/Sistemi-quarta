@@ -1,0 +1,109 @@
+!- Router RT-BO 
+enable
+configure terminal
+hostname RT-BO
+end
+exit
+!- FastEthernet 0/0 RT-NA Net-ID <<12.0.0.60/30>> ip address <<12.0.0.62>> <<255.255.255.252>>
+enable 
+configure terminal
+interface FastEthernet 0/0
+ip address 12.0.0.62 255.255.255.252 
+no shutdown
+end
+exit
+!- FastEthernet 1/0 RT-GE Net-ID <<12.0.0.76/30>> ip address <<12.0.0.78>> <<255.255.255.252>>
+enable 
+configure terminal
+interface FastEthernet 1/0
+ip address 12.0.0.78 255.255.255.252
+no shutdown
+end
+exit
+!- FastEthernet 2/0 RT-INT-BO Net-ID <<12.0.0.24/30>> ip address <<12.0.0.26>> <<255.255.255.252>>
+enable 
+configure terminal
+interface FastEthernet 2/0
+ip address 12.0.0.26 255.255.255.252
+no shutdown
+end
+exit
+
+!- Router RT-INT-BO		
+enable
+configure terminal
+hostname RT-INT-BO
+end
+exit
+!- FastEthernet 0/0 Imola Net-ID <<10.12.0.0/17>> ip address <<10.12.127.254>> <<255.255.128.0>>
+enable 
+configure terminal
+interface FastEthernet 0/0
+ip address 10.12.127.254 255.255.128.0 
+no shutdown
+end
+exit
+!- FastEthernet 1/0 Casalecchio di Reno Net-ID <<10.13.128.0/19>> ip address <<10.13.159.254>> <<255.255.224.0>>
+enable 
+configure terminal
+interface FastEthernet 1/0 
+ip address 10.13.159.254 255.255.224.0 
+no shutdown
+end
+exit
+!- FastEthernet 2/0 San Lazzaro di Savena Net-ID <<10.12.128.0/18>> ip address <<10.12.191.254>> <<255.255.192.0>>
+enable 
+configure terminal
+interface FastEthernet 2/0 
+ip address 10.12.191.254 255.255.192.0
+no shutdown
+end
+exit
+!- FastEthernet 3/0 Valsamoggia Net-ID <<10.13.192.0/20>> ip address <<10.13.207.254>> <<255.255.240.0>>
+enable 
+configure terminal
+interface FastEthernet 3/0
+ip address 10.13.207.254 255.255.240.0
+no shutdown
+end
+exit
+!- FastEthernet 4/0 San Giovanni in Persiceto Net-ID <<10.13.160.0/19>> ip address <<10.13.191.254>> <<255.255.224.0>>
+enable 
+configure terminal
+interface FastEthernet 4/0 
+ip address 10.13.191.254 255.255.224.0
+no shutdown
+end
+exit
+!- FastEthernet 5/0 Castel San Pietro Terme Net-ID <<10.12.192.0/18>> ip address <<10.12.255.254>> <<255.255.192.0>>
+enable 
+configure terminal
+interface FastEthernet 5/0 
+ip address 10.12.255.254 255.255.192.0 
+no shutdown
+end
+exit
+!- FastEthernet 6/0 Zola Predosa Net-ID <<10.13.0.0/18>> ip address <<10.13.63.254>> <<255.255.192.0>> 
+enable 
+configure terminal
+interface FastEthernet 6/0 
+ip address 10.13.63.254 255.255.192.0
+no shutdown
+end
+exit
+!- FastEthernet 7/0 RT-BO Net-ID <<12.0.0.24/30>> ip address <<12.0.0.25>> <<255.255.255.252>>
+enable 
+configure terminal
+interface FastEthernet 7/0 
+ip address 12.0.0.25 255.255.255.252
+no shutdown
+end
+exit
+!- FastEthernet 8/0 Budrio Net-ID <<10.13.64.0/18>> ip address <<10.13.127.254>> <<255.255.192.0>>
+enable 
+configure terminal
+interface FastEthernet 8/0 
+ip address 10.13.127.254 255.255.192.0 
+no shutdown
+end
+exit
