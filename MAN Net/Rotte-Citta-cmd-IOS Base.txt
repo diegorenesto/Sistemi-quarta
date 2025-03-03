@@ -4,27 +4,27 @@ configure terminal
 hostname RT-MI
 end
 exit
-!- FastEthernet 9/0 RT-PA Net-ID <<192.168.0.48/30>> ip address <<192.168.0.49>> <<255.255.255.252>> 
+!- FastEthernet 9/0 RT-PA Net-ID <<11.0.0.48/30>> ip address <<11.0.0.49>> <<255.255.255.252>> 
 enable 
 configure terminal
 interface FastEthernet 9/0
-ip address 192.168.0.49 255.255.255.252
+ip address 11.0.0.49 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 8/0 RT-GE Net-ID <<192.168.0.44/30>> ip address <<192.168.0.45>> <<255.255.255.252>> 
+!- FastEthernet 8/0 RT-GE Net-ID <<11.0.0.44/30>> ip address <<11.0.0.45>> <<255.255.255.252>> 
 enable 
 configure terminal
 interface FastEthernet 8/0
-ip address 192.168.0.45 255.255.255.252
+ip address 11.0.0.45 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 7/0 RT-INT-MI Net-ID <<192.168.0.4/30>> ip address <<192.168.0.6>> <<255.255.255.252>>
+!- FastEthernet 7/0 RT-INT-MI Net-ID <<11.0.0.4/30>> ip address <<11.0.0.6>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 7/0
-ip address 192.168.0.6 255.255.255.252 
+ip address 11.0.0.6 255.255.255.252 
 no shutdown
 end
 exit
@@ -91,11 +91,11 @@ ip address 10.3.143.254 255.255.240.0
 no shutdown
 end
 exit
-!- FastEthernet 7/0 RT-MI Net-ID <<192.168.0.4/30>> ip address <<192.168.0.5>> <<255.255.255.252>>
+!- FastEthernet 7/0 RT-MI Net-ID <<11.0.0.4/30>> ip address <<11.0.0.5>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 7/0
-ip address 192.168.0.5 255.255.255.252
+ip address 11.0.0.5 255.255.255.252
 no shutdown
 end
 exit
@@ -108,50 +108,49 @@ no shutdown
 end
 exit
 
-
-!- Router RT-PA	
+!- Router RT-PA
 enable
 configure terminal
 hostname RT-PA
 end
 exit
-!- FastEthernet 0/0 RT-MI Net-ID <<192.168.0.48/30>> ip address <<192.168.0.50>> <<255.255.252.252>>
+!- FastEthernet 0/0 RT-MI Net-ID <<11.0.0.48/30>> ip address <<11.0.0.50>> <<255.255.252.252>>
 enable 
 configure terminal
 interface FastEthernet 0/0
-ip address 192.168.0.50 255.255.255.252
+ip address 11.0.0.50 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 1/0 RT-FI Net-ID <<192.168.0.72/30>> ip address <<192.168.0.73>> <<255.255.255.252>>
+!- FastEthernet 1/0 RT-FI Net-ID <<11.0.0.72/30>> ip address <<11.0.0.73>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 1/0
-ip address 192.168.0.73 255.255.255.252 
+ip address 11.0.0.73 255.255.255.252 
 no shutdown
 end
 exit
-!- FastEthernet 2/0 RT-RM Net-ID <<192.168.0.32/30>> ip address <<192.168.0.34>> <<255.255.255.252>>
+!- FastEthernet 2/0 RT-RM Net-ID <<11.0.0.32/30>> ip address <<11.0.0.34>> <<255.255.255.252>>
 enable
 configure terminal
 interface FastEthernet 2/0
-ip address 192.168.0.34 255.255.255.252
+ip address 11.0.0.34 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 3/0 RT-TO Net-ID <<192.168.0.68/30>> ip address <<192.168.0.70>> <<255.255.255.252>>
+!- FastEthernet 3/0 RT-TO Net-ID <<11.0.0.68/30>> ip address <<11.0.0.70>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 3/0
-ip address 192.168.0.70 255.255.255.252
+ip address 11.0.0.70 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 4/0 RT-INT-PA Net-ID <<192.168.0.16/30>> ip address <<192.168.0.18>> <<255.255.255.252>>
+!- FastEthernet 4/0 RT-INT-PA Net-ID <<11.0.0.16/30>> ip address <<11.0.0.18>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 4/0
-ip address 192.168.0.18 255.255.255.252
+ip address 11.0.0.18 255.255.255.252
 no shutdown
 end
 exit
@@ -170,7 +169,7 @@ ip address 10.8.63.254 255.255.192.0
 no shutdown
 end
 exit
-!- FastEthernet 1/0 Monreale Net-ID <<10.8.64.0/18>> ip address <<10.8.127.254>> <<255.255.192.0>
+!- FastEthernet 1/0 Monreale Net-ID <<10.8.64.0/18>> ip address <<10.8.127.254>> <<255.255.192.0>>
 enable 
 configure terminal
 interface FastEthernet 1/0 
@@ -218,11 +217,11 @@ ip address 10.8.255.254 255.255.192.0
 no shutdown
 end
 exit
-!- FastEthernet 7/0 Cefalù Net-ID <<192.168.0.16/30>> ip address <<192.168.0.17>> <<255.255.255.252>>
+!- FastEthernet 7/0 Cefalù Net-ID <<11.0.0.16/30>> ip address <<11.0.0.17>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 7/0 
-ip address 192.168.0.17 255.255.255.252
+ip address 11.0.0.17 255.255.255.252
 no shutdown
 end
 exit
@@ -235,46 +234,46 @@ no shutdown
 end
 exit
 
-!- Router RT-FI	
+!- Router RT-FI  
 enable
 configure terminal
 hostname RT-FI
 end
 exit
-!- FastEthernet 0/0 RT-PA Net-ID <<192.168.0.72/30>> ip address <<192.168.0.74>> <<255.255.255.252>>
+!- FastEthernet 0/0 RT-PA Net-ID <<11.0.0.72/30>> ip address <<11.0.0.74>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 0/0
-ip address 192.168.0.74 255.255.255.252 
+ip address 11.0.0.74 255.255.255.252 
 no shutdown
 end
 exit
-!- FastEthernet 1/0 RT-NA Net-ID <<192.168.0.52/30>> ip address <<192.168.0.54>> <<255.255.255.252>>
+!- FastEthernet 1/0 RT-NA Net-ID <<11.0.0.52/30>> ip address <<11.0.0.54>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 1/0
-ip address 192.168.0.54 255.255.255.252
+ip address 11.0.0.54 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 2/0 RT-RM Net-ID <<192.168.0.36/30>> ip address <<192.168.0.38>> <<255.255.255.252>>
+!- FastEthernet 2/0 RT-RM Net-ID <<11.0.0.36/30>> ip address <<11.0.0.38>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 2/0
-ip address 192.168.0.38 255.255.255.252 
+ip address 11.0.0.38 255.255.255.252 
 no shutdown
 end
 exit
-!- FastEthernet 3/0 RT-INT-FI Net-ID <<192.168.0.28/30>> ip address <<192.168.0.30>> <<255.255.255.252>>
+!- FastEthernet 3/0 RT-INT-FI Net-ID <<11.0.0.28/30>> ip address <<11.0.0.30>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 3/0
-ip address 192.168.0.30 255.255.255.252
+ip address 11.0.0.30 255.255.255.252
 no shutdown
 end
 exit
 
-!- Router RT-INT-FI	
+!- Router RT-INT-FI  
 enable
 configure terminal
 hostname RT-INT-FI
@@ -336,11 +335,11 @@ ip address 10.15.127.254 255.255.224.0
 no shutdown
 end
 exit
-!- FastEthernet 7/0 RT-FI Net-ID <<192.168.0.28/30>> ip address <<192.168.0.29>> <<255.255.255.252>>
+!- FastEthernet 7/0 RT-FI Net-ID <<11.0.0.28/30>> ip address <<11.0.0.29>> <<255.255.255.252>>
 enable
 configure terminal 
 interface FastEthernet 7/0
-ip address 192.168.0.29 255.255.255.252
+ip address 11.0.0.29 255.255.255.252
 no shutdown
 end
 exit
@@ -353,46 +352,46 @@ no shutdown
 end
 exit
 
-!- Router RT-TO	
+!- Router RT-TO  
 enable
 configure terminal
 hostname RT-TO
 end
 exit
-!- FastEthernet 0/0 RT-PA Net-ID <<192.168.0.68/30>> ip address <<192.168.0.69>> <<255.255.255.252>>
+!- FastEthernet 0/0 RT-PA Net-ID <<11.0.0.68/30>> ip address <<11.0.0.69>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 0/0
-ip address 192.168.0.69 255.255.255.252
+ip address 11.0.0.69 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 1/0 RT-NA Net-ID <<192.168.0.56/30>> ip address <<192.168.0.58>> <<255.255.255.252>>
+!- FastEthernet 1/0 RT-NA Net-ID <<11.0.0.56/30>> ip address <<11.0.0.58>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 1/0
-ip address 192.168.0.58 255.255.255.252
+ip address 11.0.0.58 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 2/0 RT-GE Net-ID <<192.168.0.64/30>> ip address <<192.168.0.65>> <<255.255.255.252>>
+!- FastEthernet 2/0 RT-GE Net-ID <<11.0.0.64/30>> ip address <<11.0.0.65>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 2/0
-ip address 192.168.0.65 255.255.255.252
+ip address 11.0.0.65 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 3/0 RT-INT-TO Net-ID <<192.168.0.12/30>> ip address <<192.168.0.14>> <<255.255.255.252>>
+!- FastEthernet 3/0 RT-INT-TO Net-ID <<11.0.0.12/30>> ip address <<11.0.0.14>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 3/0
-ip address 192.168.0.14 255.255.255.252
+ip address 11.0.0.14 255.255.255.252
 no shutdown
 end
 exit
 
-!- Router RT-INT-TO
+!- Router RT-INT-TO  
 enable
 configure terminal
 hostname RT-INT-TO
@@ -422,7 +421,7 @@ ip address 10.7.63.254 255.255.192.0
 no shutdown
 end
 exit
-!- FastEthernet 3/0  Nichelino Net-ID <<10.7.64.0/18>> ip address <<10.7.127.254>> <<255.255.192.0>> 
+!- FastEthernet 3/0 Nichelino Net-ID <<10.7.64.0/18>> ip address <<10.7.127.254>> <<255.255.192.0>> 
 enable 
 configure terminal
 interface FastEthernet 3/0
@@ -454,11 +453,11 @@ ip address 10.7.143.254 255.255.240.0
 no shutdown
 end
 exit
-!- FastEthernet 7/0 RT-TO Net-ID <<192.168.0.12/30>> ip address <<192.168.0.13>> <<255.255.255.252>> 
+!- FastEthernet 7/0 RT-TO Net-ID <<11.0.0.12/30>> ip address <<11.0.0.13>> <<255.255.255.252>> 
 enable 
 configure terminal
 interface FastEthernet 7/0
-ip address 192.168.0.13 255.255.255.252
+ip address 11.0.0.13 255.255.255.252
 no shutdown
 end
 exit
@@ -477,43 +476,43 @@ configure terminal
 hostname RT-NA
 end
 exit
-!- FastEthernet 0/0 RT-FI Net-ID <<192.168.0.56/30>> ip address <<192.168.0.57>> <<255.255.255.252>>
+!- FastEthernet 0/0 RT-FI Net-ID <<11.0.0.56/30>> ip address <<11.0.0.57>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 0/0
-ip address 192.168.0.57 255.255.255.252 
+ip address 11.0.0.57 255.255.255.252 
 no shutdown
 end
 exit
-!- FastEthernet 1/0 RT-TO Net-ID <<192.168.0.60/30>> ip address <<192.168.0.61>> <<255.255.255.252>>
+!- FastEthernet 1/0 RT-TO Net-ID <<11.0.0.60/30>> ip address <<11.0.0.61>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 1/0
-ip address 192.168.0.61 255.255.255.252
+ip address 11.0.0.61 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 2/0 RT-BO Net-ID <<192.168.0.64/30>> ip address <<192.168.0.65>> <<255.255.255.252>>
+!- FastEthernet 2/0 RT-BO Net-ID <<11.0.0.64/30>> ip address <<11.0.0.65>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 2/0
-ip address 192.168.0.65 255.255.255.252 
+ip address 11.0.0.65 255.255.255.252 
 no shutdown
 end
 exit
-!- FastEthernet 3/0 RT-RM  Net-ID <<192.168.0.52/30>> ip address <<192.168.0.53>> <<255.255.255.252>>
+!- FastEthernet 3/0 RT-RM  Net-ID <<11.0.0.52/30>> ip address <<11.0.0.53>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 3/0
-ip address 192.168.0.53 255.255.255.252
+ip address 11.0.0.53 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 4/0 RT-INT-NA Net-ID <<192.168.0.8/30>> ip address <<192.168.0.10>> <<255.255.255.252>>
+!- FastEthernet 4/0 RT-INT-NA Net-ID <<11.0.0.8/30>> ip address <<11.0.0.10>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 4/0 
-ip address 192.168.0.10 255.255.255.252
+ip address 11.0.0.10 255.255.255.252
 no shutdown
 end
 exit
@@ -548,7 +547,7 @@ ip address 10.5.67.254 255.255.252.0
 no shutdown
 end
 exit
-!- FastEthernet 3/0  Casoria Net-ID <<10.4.0.0/18>> ip address <<10.4.63.254>> <<255.255.192.0>>
+!- FastEthernet 3/0 Casoria Net-ID <<10.4.0.0/18>> ip address <<10.4.63.254>> <<255.255.192.0>>
 enable 
 configure terminal
 interface FastEthernet 3/0 
@@ -580,11 +579,11 @@ ip address 10.5.31.254 255.255.224.0
 no shutdown
 end
 exit
-!- FastEthernet 7/0 Net-ID <<192.168.0.8/30>> ip address <<192.168.0.9>> <<255.255.255.252>> 
+!- FastEthernet 7/0 Net-ID <<11.0.0.8/30>> ip address <<11.0.0.9>> <<255.255.255.252>> 
 enable 
 configure terminal
 interface FastEthernet 7/0 
-ip address 192.168.0.9 255.255.255.252 
+ip address 11.0.0.9 255.255.255.252 
 no shutdown
 end
 exit
@@ -597,46 +596,46 @@ no shutdown
 end
 exit
 
-!- Router RT-RM	
+!- Router RT-RM
 enable
 configure terminal
 hostname RT-RM
 end
 exit
-!- FastEthernet 0/0 RT-PA Net-ID <<192.168.0.32/30>> ip address <<192.168.0.33>> <<255.255.255.252>>
+!- FastEthernet 0/0 RT-PA Net-ID <<11.0.0.32/30>> ip address <<11.0.0.33>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 0/0
-ip address 192.168.0.33 255.255.255.252
+ip address 11.0.0.33 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 1/0 RT-FI Net-ID <<192.168.0.36/30>> ip address <<192.168.0.37>> <<255.255.255.252>>
+!- FastEthernet 1/0 RT-FI Net-ID <<11.0.0.36/30>> ip address <<11.0.0.37>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 1/0
-ip address 192.168.0.37 255.255.255.252
+ip address 11.0.0.37 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 2/0 RT-NA Net-ID <<192.168.0.40/30>> ip address <<192.168.0.41>> <<255.255.255.252>>
+!- FastEthernet 2/0 RT-NA Net-ID <<11.0.0.40/30>> ip address <<11.0.0.41>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 2/0
-ip address 192.168.0.41 255.255.255.252
+ip address 11.0.0.41 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 3/0 RT-INT-RM Net-ID <<192.168.0.0/30>> ip address <<192.168.0.2>> <<255.255.255.252>>
+!- FastEthernet 3/0 RT-INT-RM Net-ID <<11.0.0.0/30>> ip address <<11.0.0.2>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 3/0
-ip address 192.168.0.2 255.255.255.252
+ip address 11.0.0.2 255.255.255.252
 no shutdown
 end
 exit
 
-!- Router RT-INT-RM	
+!- Router RT-INT-RM
 enable
 configure terminal
 hostname RT-INT-RM
@@ -698,11 +697,11 @@ ip address 10.1.55.254 255.255.248.0
 no shutdown
 end
 exit
-!- FastEthernet 7/0 RT-RM Net-ID <<192.168.0.0/30>> ip address <<192.168.0.1>> <<255.255.255.252>>
+!- FastEthernet 7/0 RT-RM Net-ID <<11.0.0.0/30>> ip address <<11.0.0.1>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 7/0 
-ip address 192.168.0.1  255.255.255.252
+ip address 11.0.0.1  255.255.255.252
 no shutdown
 end
 exit
@@ -715,41 +714,41 @@ no shutdown
 end
 exit
 
-!- Router RT-GE	
+!- Router RT-GE
 enable
 configure terminal
 hostname RT-GE
 end
 exit
-!- FastEthernet 0/0 RT-MI Net-ID <<192.168.0.44/30>> ip address <<192.168.0.46>> <<255.255.255.252>> 
+!- FastEthernet 0/0 RT-MI Net-ID <<11.0.0.44/30>> ip address <<11.0.0.46>> <<255.255.255.252>> 
 enable 
 configure terminal 
 interface FastEthernet 0/0
-ip address 192.168.0.46 255.255.255.252 
+ip address 11.0.0.46 255.255.255.252 
 no shutdown
 end
 exit
-!- FastEthernet 1/0 RT-TO Net-ID <<192.168.0.76/30>> ip address <<192.168.0.77>> <<255.255.255.252>> 
+!- FastEthernet 1/0 RT-TO Net-ID <<11.0.0.76/30>> ip address <<11.0.0.77>> <<255.255.255.252>> 
 enable 
 configure terminal
 interface FastEthernet 1/0
-ip address 192.168.0.77 255.255.255.252 
+ip address 11.0.0.77 255.255.255.252 
 no shutdown
 end
 exit
-!- FastEthernet 2/0 RT-BO Net-ID <<192.168.0.64/30>> ip address <<192.168.0.66>> <<255.255.255.252>> 
+!- FastEthernet 2/0 RT-BO Net-ID <<11.0.0.64/30>> ip address <<11.0.0.66>> <<255.255.255.252>> 
 enable 
 configure terminal
 interface FastEthernet 2/0
-ip address 192.168.0.66 255.255.255.252
+ip address 11.0.0.66 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 3/0 RT-INT-GE Net-ID <<192.168.0.20/30>> ip address <<192.168.0.22>> <<255.255.255.252>>
+!- FastEthernet 3/0 RT-INT-GE Net-ID <<11.0.0.20/30>> ip address <<11.0.0.22>> <<255.255.255.252>>
 enable 
 configure terminal 
 interface FastEthernet 3/0
-ip address 192.168.0.22 255.255.255.252 
+ip address 11.0.0.22 255.255.255.252 
 no shutdown
 end
 exit
@@ -816,11 +815,11 @@ ip address 10.11.255.254 255.255.224.0
 no shutdown
 end
 exit
-!- FastEthernet 7/0 RT-GE Net-ID <<192.168.0.20/30>> ip address <<192.168.0.21>> <<255.255.255.252>>
+!- FastEthernet 7/0 RT-GE Net-ID <<11.0.0.20/30>> ip address <<11.0.0.21>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 7/0
-ip address 192.168.0.21 255.255.255.252
+ip address 11.0.0.21 255.255.255.252
 no shutdown
 end
 exit
@@ -839,27 +838,27 @@ configure terminal
 hostname RT-BO
 end
 exit
-!- FastEthernet 0/0 RT-NA Net-ID <<192.168.0.60/30>> ip address <<192.168.0.62>> <<255.255.255.252>>
+!- FastEthernet 0/0 RT-NA Net-ID <<12.0.0.60/30>> ip address <<12.0.0.62>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 0/0
-ip address 192.168.0.62 255.255.255.252 
+ip address 12.0.0.62 255.255.255.252 
 no shutdown
 end
 exit
-!- FastEthernet 1/0 RT-GE Net-ID <<192.168.0.76/30>> ip address <<192.168.0.78>> <<255.255.255.252>>
+!- FastEthernet 1/0 RT-GE Net-ID <<12.0.0.76/30>> ip address <<12.0.0.78>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 1/0
-ip address 192.168.0.78 255.255.255.252
+ip address 12.0.0.78 255.255.255.252
 no shutdown
 end
 exit
-!- FastEthernet 2/0 RT-INT-BO Net-ID <<192.168.0.24/30>> ip address <<192.168.0.26>> <<255.255.255.252>>
+!- FastEthernet 2/0 RT-INT-BO Net-ID <<12.0.0.24/30>> ip address <<12.0.0.26>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 2/0
-ip address 192.168.0.26 255.255.255.252
+ip address 12.0.0.26 255.255.255.252
 no shutdown
 end
 exit
@@ -926,11 +925,11 @@ ip address 10.13.63.254 255.255.192.0
 no shutdown
 end
 exit
-!- FastEthernet 7/0 RT-BO Net-ID <<192.168.0.24/30>> ip address <<192.168.0.25>> <<255.255.255.252>>
+!- FastEthernet 7/0 RT-BO Net-ID <<12.0.0.24/30>> ip address <<12.0.0.25>> <<255.255.255.252>>
 enable 
 configure terminal
 interface FastEthernet 7/0 
-ip address 192.168.0.25 255.255.255.252
+ip address 12.0.0.25 255.255.255.252
 no shutdown
 end
 exit
