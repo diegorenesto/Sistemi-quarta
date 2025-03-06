@@ -1,0 +1,95 @@
+FIRENZE
+!- Rotte statiche per TORINO - PALERMO - NAPOLI per ROMA
+ip route 10.6.0.0 255.254.0.0 11.0.0.33 
+ip route 10.8.0.0 255.254.0.0 11.0.0.33 
+ip route 10.4.0.0 255.254.0.0 11.0.0.33 
+
+!- Rotte statiche per BOLOGNA - GENOVA - ROMA - MILANO per NAPOLI
+ip route 10.12.0.0 255.254.0.0 11.0.0.53 
+ip route 10.10.0.0 255.254.0.0 11.0.0.53 
+ip route 10.0.0.0 255.254.0.0 11.0.0.53 
+ip route 10.2.0.0 255.254.0.0 11.0.0.53 
+
+MILANO
+!- Rotte statiche per ROMA - NAPOLI - FIRENZE - PALERMO per PALERMO
+ip route 10.0.0.0 255.254.0.0 11.0.0.73
+ip route 10.4.0.0 255.254.0.0 11.0.0.73
+ip route 10.14.0.0 255.254.0.0 11.0.0.73
+ip route 10.8.0.0 255.254.0.0 11.0.0.73
+!- Rotte statiche per GENOVA - BOLOGNA - TORINO per GENOVA
+ip route 10.10.0.0 255.254.0.0 11.0.0.77
+ip route 10.12.0.0 255.254.0.0 11.0.0.77
+ip route 10.6.0.0 255.254.0.0 11.0.0.77
+
+BOLOGNA
+!- Rotte statiche per TORINO - GENOVA - MILANO per GENOVA
+ip route 10.6.0.0 255.254.0.0 11.0.0.77
+ip route 10.10.0.0 255.254.0.0 11.0.0.77
+ip route 10.2.0.0 255.254.0.0 11.0.0.77
+!- Rotte statiche per PALERMO - FIRENZE - NAPOLI - ROMA per NAPOLI
+ip route 10.8.0.0 255.254.0.0 11.0.0.53
+ip route 10.14.0.0 255.254.0.0 11.0.0.53
+ip route 10.4.0.0 255.254.0.0 11.0.0.53
+ip route 10.0.0.0 255.254.0.0 11.0.0.53
+
+GENOVA
+!- Rotte statiche per MILANO per MILANO
+ip route 10.2.0.0 255.254.0.0 11.0.0.45
+!- Rotte statiche per PALERMO - FIRENZE - NAPOLI per BOLOGNA
+ip route 10.8.0.0 255.254.0.0 11.0.0.62
+ip route 10.14.0.0 255.254.0.0 11.0.0.62
+ip route 10.4.0.0 255.254.0.0 11.0.0.62
+!- Rotte statiche per ROMA - TORINO - BOLOGNA per TORINO
+ip route 10.0.0.0 255.254.0.0 11.0.0.65
+ip route 10.6.0.0 255.254.0.0 11.0.0.65
+ip route 10.12.0.0 255.254.0.0 11.0.0.65
+
+ROMA
+!- Rotte statiche per NAPOLI - GENOVA - TORINO per PALERMO
+ip route 10.4.0.0 255.254.0.0 11.0.0.73
+ip route 10.10.0.0 255.254.0.0 11.0.0.73
+ip route 10.6.0.0 255.254.0.0 11.0.0.73
+!- Rotte statiche per FIRENZE per FIRENZE
+ip route 10.14.0.0 255.254.0.0 11.0.0.38
+!- Rotte statiche per PALERMO - BOLOGNA - MILANO per NAPOLI
+ip route 10.8.0.0 255.254.0.0 11.0.0.53
+ip route 10.12.0.0 255.254.0.0 11.0.0.53
+ip route 10.2.0.0 255.254.0.0 11.0.0.53
+
+TORINO
+!- Rotte statiche per ROMA - PALERMO - GENOVA per PALERMO
+ip route 10.0.0.0 255.254.0.0 11.0.0.73
+ip route 10.8.0.0 255.254.0.0 11.0.0.73
+ip route 10.10.0.0 255.254.0.0 11.0.0.73
+!- Rotte statiche per BOLOGNA - NAPOLI per NAPOLI
+ip route 10.12.0.0 255.254.0.0 11.0.0.53
+ip route 10.4.0.0 255.254.0.0 11.0.0.53
+!- Rotte statiche per FIRENZE - MILANO per GENOVA
+ip route 10.14.0.0 255.254.0.0 11.0.0.77
+ip route 10.2.0.0 255.254.0.0 11.0.0.77
+
+PALERMO
+!- Rotte statiche per BOLOGNA - MILANO - GENOVA per MILANO
+ip route 10.12.0.0 255.254.0.0 11.0.0.45
+ip route 10.2.0.0 255.254.0.0 11.0.0.45
+ip route 10.10.0.0 255.254.0.0 11.0.0.45
+!- Rotte statiche per NAPOLI - FIRENZE - TORINO per TORINO
+ip route 10.4.0.0 255.254.0.0 11.0.0.65
+!- Rotte statiche per ROMA per ROMA
+ip route 10.0.0.0 255.254.0.0 11.0.0.53
+
+NAPOLI
+!- Rotte statiche per FIRENZE - GENOVA per ROMA
+ip route 10.14.0.0 255.254.0.0 11.0.0.53
+ip route 10.10.0.0 255.254.0.0 11.0.0.53
+!- Rotte statiche per BOLOGNA per BOLOGNA
+ip route 10.12.0.0 255.254.0.0 11.0.0.62
+!- Rotte statiche per PALERMO - ROMA - MILANO - TORINO per TORINO
+ip route 10.8.0.0 255.254.0.0 11.0.0.65
+ip route 10.0.0.0 255.254.0.0 11.0.0.65
+ip route 10.2.0.0 255.254.0.0 11.0.0.65
+ip route 10.6.0.0 255.254.0.0 11.0.0.65
+
+
+
+
