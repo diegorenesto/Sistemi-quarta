@@ -1,0 +1,197 @@
+Configurazione Router Interface 
+
+R0
+enable
+configure terminal
+interface Fa7/0
+ip address 192.168.0.1 255.255.255.240
+no shutdown
+exit
+interface gig8/0
+ip address 192.168.0.34 255.255.255.252
+no shutdown
+exit
+interface gig9/0
+ip address 192.168.0.41 255.255.255.252
+no shutdown
+end
+exit
+
+R1
+enable
+configure terminal
+interface Gig7/0
+ip address 192.168.0.38 255.255.255.252
+no shutdown
+exit
+interface Fa8/0
+ip address 192.168.0.17 255.255.255.240
+no shutdown
+exit
+interface gig9/0
+ip address 192.168.0.42 255.255.255.252
+no shutdown
+end
+exit
+
+R2
+enable
+configure terminal
+interface fa7/0
+ip address 192.168.0.65 255.255.255.240
+no shutdown
+exit
+interface gig8/0
+ip address 192.168.0.105 255.255.255.252
+no shutdown
+exit
+interface gig9/0
+ip address 192.168.0.98 255.255.255.252
+no shutdown
+end
+exit
+
+R3
+enable
+configure terminal
+interface gig7/0
+ip address 192.168.0.102 255.255.255.252
+no shutdown
+exit
+interface gig8/0
+ip address 192.168.0.106 255.255.255.252
+no shutdown
+exit
+interface fa9/0
+ip address 192.168.0.81 255.255.255.240
+no shutdown
+end
+exit
+
+
+R4
+enable
+configure terminal
+interface gig6/0
+ip address 192.168.0.37 255.255.255.252
+no shutdown
+exit
+interface gig7/0
+ip address 192.168.0.153 255.255.255.252
+no shutdown
+exit
+interface gig8/0
+ip address 192.168.0.33 255.255.255.252
+no shutdown
+exit
+interface gig9/0
+ip address 192.168.0.146 255.255.255.252
+no shutdown
+end
+exit
+
+R5
+enable
+configure terminal
+interface gig6/0
+ip address 192.168.0.101 255.255.255.252
+no shutdown
+exit
+interface gig7/0
+ip address 192.168.0.154 255.255.255.252
+no shutdown
+exit
+interface gig8/0
+ip address 192.168.0.150 255.255.255.252
+no shutdown
+exit
+interface gig9/0
+ip address 192.168.0.97 255.255.255.252
+no shutdown
+end
+exit
+
+R6
+enable
+configure terminal
+interface fa7/0
+ip address 192.168.0.129 255.255.255.240
+no shutdown
+exit
+interface gig8/0
+ip address 192.168.0.149 255.255.255.252
+no shutdown
+exit
+interface gig9/0
+ip address 192.168.0.145 255.255.255.252
+no shutdown
+end
+exit
+
+
+Configurazione OSPF
+
+R0
+enable
+configure terminal
+router ospf 10
+router-id 0.0.0.10
+network 192.168.0.0 0.0.0.127 area 1
+end
+exit
+
+R1
+enable
+configure terminal
+router ospf 11
+router-id 0.0.0.11
+network 192.168.0.0 0.0.0.127 area 1
+end
+exit
+
+R2
+enable
+configure terminal
+router ospf 12
+router-id 0.0.0.12
+network 192.168.0.64 0.0.0.127 area 2
+end
+exit
+
+R3
+enable
+configure terminal
+router ospf 13
+router-id 0.0.0.13
+network 192.168.0.64 0.0.0.127 area 2
+end
+exit
+
+R4
+enable
+configure terminal
+router ospf 14
+router-id 0.0.0.14
+network 192.168.0.128 0.0.0.63 area 0
+network 192.168.0.0 0.0.0.127 area 1
+end
+exit
+
+R5
+enable
+configure terminal
+router ospf 15
+router-id 0.0.0.15
+network 192.168.0.128 0.0.0.63 area 0
+network 192.168.0.64 0.0.0.127 area 2
+end
+exit
+
+R6
+enable
+configure terminal
+router ospf 16
+router-id 0.0.0.16
+network 192.168.0.128 0.0.0.63 area 0
+end
+exit

@@ -1,0 +1,20 @@
+!- Esterni
+enable
+configure terminal
+router rip
+version 2
+network 192.168.0.0
+network 11.0.0.0
+no auto-summary
+end
+exit
+!-Interni
+enable
+configure terminal
+router rip
+version 2
+network 192.168.0.0
+network 10.0.0.0
+no auto-summary
+end
+exit
